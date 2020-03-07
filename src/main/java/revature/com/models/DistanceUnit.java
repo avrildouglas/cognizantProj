@@ -13,11 +13,24 @@ public enum DistanceUnit {
 		Miles("miles");
 	
 	private String distance;
+
 	
-	private DistanceUnit (String distance) {
+	private DistanceUnit(String distance) {
 		this.distance = distance;
-		
 	}
+
+	public String getDistance() {
+		return distance;
+	}
+
+	public void setDistance(String distance) {
+		this.distance = distance;
+	}
+	
+	
+	
+	
+	
 
 
 }

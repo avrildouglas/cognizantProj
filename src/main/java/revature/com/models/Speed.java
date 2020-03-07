@@ -43,7 +43,5 @@ public class Speed {
 		return "Speed [duration=" + duration + ", distance=" + distance + "]";
 	}
 	
-	
-	
 }
 

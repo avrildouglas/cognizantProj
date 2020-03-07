@@ -11,16 +11,16 @@ import com.revature.dao.SpeedResultRepository;
 import revature.com.models.SpeedResult;
 
 @RestController
-@RequestMapping("/SpeedResult")
+@RequestMapping("/speedresults")
 
-public class SpeedResultController {
+public class SpeedController {
 	
 	@Autowired
-	private SpeedResultRepository repository;
-	@PostMapping
+	private SpeedResultRepository speedResultRepository;
+	@PostMapping 
 	public String saveExperiment(@RequestBody SpeedResult request) {
-		repository.save(request);
-		return "test";
+		speedResultRepository.save(request);
+		return "test";	
 		
 	}
 	
